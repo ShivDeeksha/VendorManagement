@@ -53,6 +53,7 @@ $body = @{
 
 $response = Invoke-WebRequest -Uri "http://localhost:8000/api/token/" -Method Post -Headers $headers -Body ($body | ConvertTo-Json)
 $response.Content
+````
 Or you can use curl:
 
 curl -X POST -H "Content-Type: application/json" -d '{"username": "admin", "password": "a123"}' http://localhost:8000/api/token/
@@ -69,7 +70,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 (replace with your own access token)
 7. Test the endpoints by sending requests using Postman.
 
-## Endpoints
+Endpoints
 
 ### 1. Create a Vendor:
    - **URL:** `/api/vendors/`
