@@ -69,7 +69,17 @@ curl -X POST -H "Content-Type: application/json" -d '{"username": "admin", "pass
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0OTEzOTU0LCJpYXQiOjE3MTQ5MTM2NTQsImp0aSI6ImI3OTkwMmRhNzNlNzRjYzhiNjFiYjAyY2U2NWRlMDk4IiwidXNlcl9pZCI6MX0.WzCLvPJRf4WtJyIjP3P00U62Zscsv5A7HOaCTJiEpAY
 (replace with your own access token)
 7. Test the endpoints by sending requests using Postman.
+![vendors List](images/Vendor_list.png)
 
+8. To refresh the token 
+   1. Set the request type to POST.
+   2. Enter the URL for the token endpoint, which is typically `http://localhost:8000/api/token/refresh/`.
+   3. Go to the Body tab and select x-www-form-urlencoded.
+   4. Add the following key-value pairs:
+      - **username:** admin
+      - **password:** a123
+      - **request:**  refresh token
+   5. Send the request.
 ## Endpoints
 
 ### 1. Create a Vendor:
