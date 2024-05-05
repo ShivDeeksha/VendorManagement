@@ -5,17 +5,22 @@ from .models import Vendor, PurchaseOrder
 from .serializers import VendorSerializer, PurchaseOrderSerializer
 from rest_framework.response import Response
 from django.db import models
+from rest_framework.permissions import IsAdminUser
+
 
 
 class VendorListCreateAPIView(generics.ListCreateAPIView):
+    permission_classes = [IsAdminUser]
     queryset = Vendor.objects.all()
     serializer_class = VendorSerializer
 
 class VendorRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = [IsAdminUser]
     queryset = Vendor.objects.all()
     serializer_class = VendorSerializer
 
 class PurchaseOrderListCreateAPIView(generics.ListCreateAPIView):
+    permission_classes = [IsAdminUser]
     queryset = PurchaseOrder.objects.all()
     serializer_class = PurchaseOrderSerializer
 
@@ -27,10 +32,12 @@ class PurchaseOrderListCreateAPIView(generics.ListCreateAPIView):
         return queryset
 
 class PurchaseOrderRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = [IsAdminUser]
     queryset = PurchaseOrder.objects.all()
     serializer_class = PurchaseOrderSerializer
 
 class VendorPerformanceAPIView(generics.RetrieveAPIView):
+    permission_classes = [IsAdminUser]
     queryset = Vendor.objects.all()
     serializer_class = VendorSerializer
 
