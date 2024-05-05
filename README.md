@@ -63,7 +63,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"username": "admin", "pass
 5. Go to the Headers tab and add a new header with the key Authorization and the value Bearer <access_token>. Replace <access_token> with the token you copied earlier.
 6. Send the request.
 ### Eg: Vendor List/Create Endpoint:
-- **URL:** `http://localhost:8000/vendors/`
+- **URL:** `http://localhost:8000/api/vendors/`
 - **Method:** GET (to retrieve) or POST (to create)
 - **Headers:** 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0OTEzOTU0LCJpYXQiOjE3MTQ5MTM2NTQsImp0aSI6ImI3OTkwMmRhNzNlNzRjYzhiNjFiYjAyY2U2NWRlMDk4IiwidXNlcl9pZCI6MX0.WzCLvPJRf4WtJyIjP3P00U62Zscsv5A7HOaCTJiEpAY
