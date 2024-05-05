@@ -99,6 +99,19 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
    - **Method:** `GET`
    - **Authentication:** Required (Bearer token).
 
+### Generating Sample Data
+
+To facilitate testing and development, we provide a script named `generate_sample_data.py` that allows you to generate fake sample data for the Vendor Management system. This script utilizes the Faker library to create realistic-looking data across various models such as Vendors and Purchase Orders.
+
+#### Usage
+
+1. Navigate to the `vendorMgmt\vendors` directory where the script is located.
+2. Ensure that your virtual environment is activated (`venv\Scripts\activate` for Windows or `source venv/bin/activate` for Unix-based systems).
+3. Run the script using the command:
+python generate_sample_data.py
+4. Once the script completes execution, you will find the generated sample data populated in your database.
+
+Please note that this script is primarily intended for testing and development purposes. It creates fake data to simulate real-world scenarios and should not be used in production environments.
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or create a pull request.
