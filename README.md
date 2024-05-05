@@ -53,18 +53,19 @@ $body = @{
 
 $response = Invoke-WebRequest -Uri "http://localhost:8000/api/token/" -Method Post -Headers $headers -Body ($body | ConvertTo-Json)
 $response.Content
+```
 Or you can use curl:
-
+```
 curl -X POST -H "Content-Type: application/json" -d '{"username": "admin", "password": "a123"}' http://localhost:8000/api/token/
-
+```
 3. Copy the access token.
 4. Open Postman and create a new request.
 5. Go to the Headers tab and add a new header with the key Authorization and the value Bearer <access_token>. Replace <access_token> with the token you copied earlier.
 6. Send the request.
-Eg: Vendor List/Create Endpoint:
-URL: http://localhost:8000/vendors/
-Method: GET (to retrieve) or POST (to create)
-Headers:
+### Eg: Vendor List/Create Endpoint:
+- **URL:** `http://localhost:8000/vendors/`
+- **Method:** GET (to retrieve) or POST (to create)
+- **Headers:** 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0OTEzOTU0LCJpYXQiOjE3MTQ5MTM2NTQsImp0aSI6ImI3OTkwMmRhNzNlNzRjYzhiNjFiYjAyY2U2NWRlMDk4IiwidXNlcl9pZCI6MX0.WzCLvPJRf4WtJyIjP3P00U62Zscsv5A7HOaCTJiEpAY
 (replace with your own access token)
 7. Test the endpoints by sending requests using Postman.
