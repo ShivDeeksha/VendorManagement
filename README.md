@@ -61,7 +61,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"username": "admin", "pass
 4. Open Postman and create a new request.
 5. Go to the Headers tab and add a new header with the key Authorization and the value Bearer <access_token>. Replace <access_token> with the token you copied earlier.
 6. Send the request.
-Eg: Vendor List/Create Endpoint:
+##Eg: Vendor List/Create Endpoint:
 URL: http://localhost:8000/vendors/
 Method: GET (to retrieve) or POST (to create)
 Headers:
