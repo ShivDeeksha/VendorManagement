@@ -124,10 +124,3 @@ python generate_sample_data.py
 4. Once the script completes execution, you will find the generated sample data populated in your database.
 
 Please note that this script is primarily intended for testing and development purposes. It creates fake data to simulate real-world scenarios and should not be used in production environments.
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or create a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
