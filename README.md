@@ -108,6 +108,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
    - **URL:** `/api/vendors/<vendor_id>/performance/`
    - **Method:** `GET`
    - **Authentication:** Required (Bearer token).
+   ![Vendor Performance](images/performance.png)
+
 
 ### Generating Sample Data
 
