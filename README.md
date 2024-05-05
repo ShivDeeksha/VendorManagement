@@ -108,7 +108,9 @@ To facilitate testing and development, we provide a script named `generate_sampl
 1. Navigate to the `vendorMgmt\vendors` directory where the script is located.
 2. Ensure that your virtual environment is activated (`venv\Scripts\activate` for Windows or `source venv/bin/activate` for Unix-based systems).
 3. Run the script using the command:
+```
 python generate_sample_data.py
+```
 4. Once the script completes execution, you will find the generated sample data populated in your database.
 
 Please note that this script is primarily intended for testing and development purposes. It creates fake data to simulate real-world scenarios and should not be used in production environments.
